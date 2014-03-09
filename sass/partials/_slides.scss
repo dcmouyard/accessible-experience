@@ -1,0 +1,23 @@
+// @file
+// Slides
+
+@each $slide in title, final {
+  .impress-on-#{$slide} .show-on-#{$slide} {
+    opacity: 1;
+  }
+  .impress-on-#{$slide} .hide-on-#{$slide} {
+    opacity: 0;
+  }
+}
+
+#title {
+  small {
+    text-transform: none;
+  }
+}
+
+#dcmouyard {
+  h3 {
+    margin-bottom: 0;
+  }
+}
