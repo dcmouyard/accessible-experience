@@ -74,6 +74,7 @@ blockquote {
     display: block;
     font-style: normal;
     font-weight: 300;
+    line-height: 1.25;
     margin-top: 0.5em;
     text-align: right;
   }
@@ -98,6 +99,7 @@ caption {}
 cite {
   > small {
     display: block;
+    line-height: 1.25;
   }
 }
 

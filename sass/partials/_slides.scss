@@ -24,24 +24,37 @@
 
 .impress-on-why-legal {
   @extend %picture-background;
+  // http://www.flickr.com/photos/jreed/379881530/
   background-image: url(../img/target.jpg);
 }
 
 .impress-on-why-blind {
   @extend %picture-background;
+  // http://www.flickr.com/photos/specialkrb/4689672374/
   background-image: url(../img/blind.jpg);
 }
 
 .impress-on-why-elderly {
   @extend %picture-background;
+  // http://www.flickr.com/photos/srgblog/3309100541/
   background-image: url(../img/elderly.jpg);
 }
 
 .impress-on-why-glare {
   @extend %picture-background;
+  // http://www.flickr.com/photos/chrisdlugosz/3592952033/
   background-image: url(../img/glare.jpg);
 }
 
+.impress-on-photophobia {
+  // http://www.flickr.com/photos/flyingturtle/2455173339/
+  background: #fff url(../img/ant.jpg) no-repeat bottom left;
+}
+
+#photophobia {
+  color: #000;
+  text-shadow: none;
+}
 
 
 
