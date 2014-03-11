@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=1024">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>The Acccessible Experience: Designing for Everyone</title>
+  <title>The Accessible Experience: Designing for Everyone</title>
   <meta name="author" content="Dan Mouyard">
   <link href="http://fonts.googleapis.com/css?family=Oswald:700,400,300" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 <div id="impress">
 
   <article id="title" data-x="0" data-y="0" data-scale="3" class="step show-on-final">
-    <h1 class="headline">The Acccessible Experience <small>Designing for Everyone</small></h1>
+    <h1 class="headline">The Accessible Experience <small>Designing for Everyone</small></h1>
     <p class="centered"><a href="http://dcmouyard.github.io/accessible-experience">dcmouyard.github.io/accessible-experience</a></p>
   </article>
 
@@ -119,30 +119,60 @@
   </article>
 
   <article id="screenreaders" data-x="8000" data-y="20" data-scale="0.01"  data-rotate="-180" class="step">
-    <h3 class="h1">Using a Screenreader</h3>
+    <h3 class="h2">Using a Screenreader</h3>
     <ul>
       <li><a href="http://apple.com/accessibility/osx/voiceover/">VoiceOver</a> <small>(apple.com/accessibility/osx/voiceover)</small></li>
       <li><a href="http://chromevox.com/tutorial/">ChromeVox</a> <small>(chromevox.com/tutorial)</small></li>
       <li><a href="http://nvaccess.org/">NVDA</a> <small>(nvaccess.org)</small></li>
       <li><a href="http://freedomscientific.com/products/fs/jaws-product-page.asp">JAWS</a> <small>(freedomscientific.com/products/fs/jaws-product-page.asp)</small></li>
     </ul>
+    <p><small>Example site: <a href="http://maruchan.com">maruchan.com</a></small></p>
   </article>
 
-  <article id="photophobia" data-x="7980" data-y="20" data-scale="0.01"  data-rotate="-180" class="step">
-    <h3 class="element-invisible">Photophobia</h3>
+  <article id="screenreader-demo" data-x="8000" data-y="20" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Screenreader demo: maruchan.com</h3>
+  </article>
+
+  <article id="smartphone-accessibility" data-x="8000" data-y="10" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="h2"><span class="highlight">Smartphone</span> Accessibility</h3>
+    <ul>
+      <li>iPhone (Settings > General > Accessibility)</li>
+      <li>Android 3.1 &amp; Below
+        <ol>
+          <li>(Settings > Text-To-Speech/Voice Input &amp; Output)</li>
+          <li>(Settings > Accessibility)</li>
+        </ol>
+      </li>
+      <li>Android 4.0 &amp; Up (Draw a clockwise square around the entire screen starting at the top left)</li>
+    </ul>
+  </article>
+
+  <article id="light-sensitivity" data-x="7980" data-y="10" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Light Sensitivity</h3>
     <blockquote>
       Black text on white is like looking at<br>ants on a lightbulb.&rdquo;
       <cite>&ndash; Rhys Keepence</cite>
     </blockquote>
   </article>
 
-  <article id="" data-x="7980" data-y="10" data-scale="0.01"  data-rotate="-180" class="step">
-    <h3 class="h1">Color Blindness</h3>
-    <ul>
-      <li><a href="http://www.adobe.com/accessibility/products/photoshop.html">PhotoShop</a> <small>(View > Proof Setup > Color Blindness)</small></li>
-      <li><a href="http://colororacle.org/">Color Oracle</a> <small>(colororacle.org)</small></li>
-      <li><a href="http://colorfilter.wickline.org/">Color Filter</a> <small>(colorfilter.wickline.org)</small></li>
-    </ul>
+  <article id="normal-vision" data-x="7980" data-y="0" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Normal Vision</h3>
+  </article>
+
+  <article id="photophobia" data-x="7980" data-y="0" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Photophobia</h3>
+  </article>
+
+  <article id="deuteranopia" data-x="7980" data-y="0" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Deuteranopia</h3>
+  </article>
+
+  <article id="macular-degeneration" data-x="7980" data-y="0" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Macular Degeneration</h3>
+  </article>
+
+  <article id="tunnel-vision" data-x="7980" data-y="0" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Tunnel Vision</h3>
   </article>
 
   <article id="hearing" data-x="8000" data-y="-1000" data-scale="0.75"  data-rotate="-180" class="step">
@@ -156,6 +186,11 @@
         <li>No Sound</li>
       </ul>
     </div>
+  </article>
+
+  <article id="video-captions" data-x="8000" data-y="-1000" data-scale="0.01"  data-rotate="-180" class="step hide-on-hearing">
+    <h3 class="element-invisible">Video Captions</h3>
+    <iframe width="853" height="480" src="http://www.youtube.com/embed/sdEk4P3kQb0?rel=0&amp;cc_load_policy=0" frameborder="0" allowfullscreen></iframe>
   </article>
 
   <article id="mobility" data-x="8000" data-y="-2000" data-scale="0.75"  data-rotate="-180" class="step">
@@ -172,6 +207,15 @@
         <li>Touch Devices</li>
       </ul>
     </div>
+  </article>
+
+  <article id="sip-puff" data-x="8000" data-y="-2000" data-scale="0.01"  data-rotate="-180" class="step hide-on-hearing">
+    <h3 class="element-invisible">Sip/Puff Device</h3>
+    <iframe width="853" height="480" src="http://www.youtube.com/embed/nXBsDrCb54g?rel=0&amp;cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+  </article>
+
+  <article id="mobility-demo" data-x="8000" data-y="-2010" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Mobility demo: craigslist.com</h3>
   </article>
 
   <article id="cognitive" data-x="8000" data-y="-3000" data-scale="0.75"  data-rotate="-180" class="step">
@@ -191,14 +235,20 @@
     </div>
   </article>
 
+  <article id="bad-attention-demo" data-x="8000" data-y="-3000" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Bad attention demo: lingscars.com</h3>
+  </article>
 
+  <article id="good-attention-demo" data-x="8000" data-y="-3000" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Good attention demo: medium.com</h3>
+  </article>
 
-
+  <article id="foreign-demo" data-x="8000" data-y="-3000" data-scale="0.01"  data-rotate="-180" class="step">
+    <h3 class="element-invisible">Foreign language demo: codeprep.jp</h3>
+  </article>
 
   <article id="final" data-x="1500" data-y="500" data-scale="5" class="step">
   </article>
-
-  <article id="demo" data-x="0" data-y="0" data-scale="20" class="step"></article>
 
   <script src="js/impress.min.js"></script>
   <script>impress().init();</script>

@@ -1,7 +1,7 @@
 // @file
 // Slides
 
-@each $slide in title, final {
+@each $slide in title, hearing, final {
   .impress-on-#{$slide} .show-on-#{$slide} {
     opacity: 1;
   }
@@ -46,15 +46,85 @@
   background-image: url(../img/glare.jpg);
 }
 
-.impress-on-photophobia {
+.impress-on-screenreader-demo {
+  @extend %picture-background;
+  background-image: url(../img/maruchan.jpg);
+}
+
+.impress-on-light-sensitivity {
   // http://www.flickr.com/photos/flyingturtle/2455173339/
   background: #fff url(../img/ant.jpg) no-repeat bottom left;
 }
 
-#photophobia {
+#light-sensitivity {
   color: #000;
   text-shadow: none;
+
+  blockquote {
+    padding-bottom: 2em;
+
+    &:before {
+      text-shadow: #000 2px 2px;
+    }
+  }
 }
+
+.impress-on-normal-vision {
+  @extend %picture-background;
+  background-image: url(../img/normal-vision.jpg);
+}
+
+.impress-on-photophobia {
+  @extend %picture-background;
+  background-image: url(../img/photophobia.jpg);
+}
+
+.impress-on-deuteranopia {
+  @extend %picture-background;
+  background-image: url(../img/deuteranopia.jpg);
+}
+
+.impress-on-macular-degeneration {
+  @extend %picture-background;
+  background-image: url(../img/macular-degeneration.jpg);
+}
+
+.impress-on-tunnel-vision {
+  @extend %picture-background;
+  background-image: url(../img/tunnel-vision.jpg);
+}
+
+#video-captions iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+#sip-puff iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.impress-on-mobility-demo {
+  @extend %picture-background;
+  background-image: url(../img/craigslist.jpg);
+}
+
+.impress-on-bad-attention-demo {
+  @extend %picture-background;
+  background-image: url(../img/lingscars.jpg);
+}
+
+.impress-on-good-attention-demo {
+  @extend %picture-background;
+  background-image: url(../img/medium.jpg);
+}
+
+.impress-on-foreign-demo {
+  @extend %picture-background;
+  background-image: url(../img/codeprep.jpg);
+}
+
+
 
 
 
