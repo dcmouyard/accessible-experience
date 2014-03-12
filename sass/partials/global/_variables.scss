@@ -8,12 +8,15 @@
 $gutter-width: 48px;
 
 // Colors
-$f1-red: rgb(248, 102, 70);
+$f1-red: #bf311a;
+$f1-orange: #f8971d;
+$f1-blue: #73afb6;
+$highlight-color: $f1-orange;
 $primary-text-color: #fff;
-$secondary-text-color: #555;
+$secondary-text-color: #ccc;
 $heading-text-color: $primary-text-color;
 $body-color: #000;
-$link-color: $f1-red;
+$link-color: $highlight-color;
 $link-hover-color: #f39033;
 $selection-background: blue;
 $selection-foreground: #fff;
@@ -26,7 +29,7 @@ $base-font-family: Oswald, Calibri, "Helvetica Neue", Helvetica, Arial, sans-ser
 $header-font-family: Oswald, AlternateGothicNo1D, LeagueGothicRegular, Arial, Helvetica, sans-serif;
 $monospace-font-family: Consolas, "Lucida Console", "Liberation Mono", "Courier New", monospace, sans-serif;
 $base-font-size: 48px;
-$base-line-height: 72px;
+$base-line-height: 60px;
 $font-size-xxl: 96px;
 $font-size-xl: 72px;
 $font-size-lg: 60px;

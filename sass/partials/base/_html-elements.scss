@@ -24,6 +24,7 @@
 }
 
 a {
+  border-bottom: 0.0625em solid $link-color;
   color: $link-color;
   margin: -2px; // Improved readability when focused.
   padding: 2px; // Improved readability when focused.
@@ -31,6 +32,7 @@ a {
 
   &:hover,
   &:focus {
+    border-bottom-color: $link-hover-color;
     color: $link-hover-color;
   }
 }
@@ -60,7 +62,7 @@ blockquote {
   position: relative;
 
   &:before {
-    color: $f1-red;
+    color: $highlight-color;
     content: "\201C";
     display: inline-block;
     font-size: 300%;
@@ -271,7 +273,19 @@ legend {
   }
 }
 
-li {}
+li {
+  padding-bottom: 0.75em;
+
+  & > ol > li:first-of-type,
+  & > ul > li:first-of-type {
+    padding-top: 0.75em;
+  }
+
+  & > ol >  li:last-of-type,
+  & > ul >  li:last-of-type {
+    padding-bottom: 0;
+  }
+}
 
 main {}
 
@@ -367,7 +381,7 @@ u {}
 
 ul {
   list-style-type: square;
-  margin: rhythm(1) 0;
+  margin: rhythm(1) 0 (rhythm(1) - 0.75em);
   padding: 0 0 0 1.2em; // LTR
 
   [dir="rtl"] & {
