@@ -23,16 +23,21 @@
   @include transition-timing-function(linear);
 }
 
-a {
-  border-bottom: 0.0625em solid $link-color;
+%underlined-link {
+  @include underline($link-underline-color);
   color: $link-color;
+  position: relative;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 $body-color, 1px -1px 0 $body-color, -1px 1px 0 $body-color, 1px 1px 0 $body-color;
+}
+
+a {
+  @extend %underlined-link;
   margin: -2px; // Improved readability when focused.
   padding: 2px; // Improved readability when focused.
-  text-decoration: none;
 
   &:hover,
   &:focus {
-    border-bottom-color: $link-hover-color;
     color: $link-hover-color;
   }
 }

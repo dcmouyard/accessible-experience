@@ -16,8 +16,12 @@ $primary-text-color: #fff;
 $secondary-text-color: #ccc;
 $heading-text-color: $primary-text-color;
 $body-color: #000;
-$link-color: $highlight-color;
+$link-color: $f1-orange;
 $link-hover-color: #f39033;
+$link-underline-color: darken($link-color, 15%);
+$link-underline-hover-color: $link-hover-color;
+$link-underline-width: 0.046875em; // 3/64
+$link-underline-offset: 0.21875em; // 14/64
 $selection-background: blue;
 $selection-foreground: #fff;
 $border-color: #ccc;
