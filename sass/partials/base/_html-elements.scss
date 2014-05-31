@@ -88,10 +88,11 @@ blockquote {
 }
 
 body {
-  background: url(../img/f1-white.png) no-repeat 98% 98%, #000 url(../img/splat.png) no-repeat 100% 100%;
+  background: $body-color url(../img/branding/f1-wordmark-white.svg) no-repeat calc(100% - 24px) calc(100% - 18px);
+  background-size: 144px 16px;
   color: $primary-text-color;
   font-weight: 300;
-  text-shadow: #000 2px 2px;
+  text-shadow: darken($body-color, 20%) 2px 2px;
   word-wrap: break-word;
 }
 
@@ -158,55 +159,60 @@ form {}
   color: $heading-text-color;
   font-family: $header-font-family;
   line-height: 1.25;
+  margin: 0;
   text-rendering: optimizeLegibility;
+
+  small {
+    display: block;
+  }
 }
 
 .title {
   @extend %hN;
   font-size: em($font-size-xxl);
-  margin: rhythm(1, $font-size-xxl) 0;
+  margin-bottom: rhythm(1, $font-size-xxl);
 }
 
 h1,
 .h1 {
   @extend %hN;
   font-size: em($font-size-xl);
-  margin: rhythm(1, $font-size-xl) 0;
+  margin-bottom: rhythm(1, $font-size-xl);
 }
 
 h2,
 .h2 {
   @extend %hN;
   font-size: em($font-size-lg);
-  margin: rhythm(1, $font-size-lg) 0;
+  margin-bottom: rhythm(1, $font-size-lg);
 }
 
 h3,
 .h3 {
   @extend %hN;
   font-size: em($font-size-normal);
-  margin: rhythm(1, $font-size-normal) 0;
+  margin-bottom: rhythm(1, $font-size-normal);
 }
 
 h4,
 .h4 {
   @extend %hN;
   font-size: em($font-size-normal);
-  margin: rhythm(1, $font-size-normal) 0;
+  margin-bottom: rhythm(1, $font-size-normal);
 }
 
 h5,
 .h5 {
   @extend %hN;
   font-size: em($font-size-md);
-  margin: rhythm(1, $font-size-md) 0;
+  margin-bottom: rhythm(1, $font-size-md);
 }
 
 h6,
 .h6 {
   @extend %hN;
   font-size: em($font-size-sm);
-  margin: rhythm(1, $font-size-sm) 0;
+  margin-bottom: rhythm(1, $font-size-sm);
 }
 
 header {}
@@ -279,11 +285,11 @@ legend {
 }
 
 li {
-  padding-bottom: 0.75em;
+  padding-bottom: 0.5em;
 
   & > ol > li:first-of-type,
   & > ul > li:first-of-type {
-    padding-top: 0.75em;
+    padding-top: 0.5em;
   }
 
   & > ol >  li:last-of-type,
@@ -353,7 +359,7 @@ section {}
 select {}
 
 small {
-  @include adjust-font-size-to($font-size-md);
+  @include adjust-font-size-to($font-size-sm);
 }
 
 strong {}
@@ -386,7 +392,7 @@ u {}
 
 ul {
   list-style-type: square;
-  margin: rhythm(1) 0 (rhythm(1) - 0.75em);
+  margin: 0 0 (rhythm(1) - 0.5em);
   padding: 0 0 0 1.2em; // LTR
 
   [dir="rtl"] & {

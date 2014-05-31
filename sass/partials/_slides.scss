@@ -1,7 +1,8 @@
 // @file
 // Slides
 
-@each $slide in title, hearing, final {
+// Show/hide other slides based on which slide is active.
+@each $slide in title, dcmouyard, disabilities, hearing, final {
   .impress-on-#{$slide} .show-on-#{$slide} {
     opacity: 1;
   }
@@ -10,8 +11,36 @@
   }
 }
 
+%bg-primary {
+  background: url(../img/branding/f1-wordmark-white.svg) no-repeat calc(100% - 24px) calc(100% - 18px),
+              $f1-red url(../img/branding/f1-thin-circle-white.svg) no-repeat -1000px 50px;
+  background-size: 144px 16px, 1800px 1800px;
+
+  a {
+    color: $f1-white;
+  }
+}
+
+%bg-secondary {
+  background: url(../img/branding/f1-wordmark-white.svg) no-repeat calc(100% - 24px) calc(100% - 18px),
+              $f1-ash url(../img/branding/f1-thin-circle-red.svg) no-repeat -1000px 50px;
+  background-size: 144px 16px, 1800px 1800px;
+}
+
+.impress-on-title {
+  @extend %bg-primary;
+}
+
 #title {
+  text-shadow: none;
+
+  h1 {
+    margin: 0;
+  }
+
   small {
+    display: block;
+    margin-top: em(32px, 45px);
     text-transform: none;
   }
 }
@@ -20,6 +49,27 @@
   h3 {
     margin-bottom: 0.5em;
   }
+
+  img {
+    background: #000;
+  }
+}
+
+.impress-on-why {
+  @extend %bg-secondary;
+}
+
+#why {
+  text-shadow: darken($f1-ash, 20%) 2px 2px;
+
+  .title {
+    margin: 0;
+  }
+}
+
+.impress-on-personal-story {
+  @extend %picture-background;
+  background-image: url(../img/dj.jpg);
 }
 
 .impress-on-why-legal {
@@ -46,6 +96,16 @@
   background-image: url(../img/glare.jpg);
 }
 
+.impress-on-disabilities {
+  @extend %bg-secondary;
+}
+
+#disabilities {
+  .title {
+    margin: 0;
+  }
+}
+
 .impress-on-screenreader-demo {
   @extend %picture-background;
   background-image: url(../img/maruchan.jpg);
@@ -64,7 +124,7 @@
     padding-bottom: 2em;
 
     &:before {
-      text-shadow: #000 2px 2px;
+      text-shadow: rgba(0, 0, 0, 0.2) 2px 2px;
     }
   }
 }
@@ -82,6 +142,11 @@
 .impress-on-deuteranopia {
   @extend %picture-background;
   background-image: url(../img/deuteranopia.jpg);
+}
+
+.impress-on-protanopia {
+  @extend %picture-background;
+  background-image: url(../img/protanopia.jpg);
 }
 
 .impress-on-macular-degeneration {
@@ -107,6 +172,11 @@
 .impress-on-mobility-demo {
   @extend %picture-background;
   background-image: url(../img/craigslist.jpg);
+}
+
+.impress-on-keyboard-demo {
+  @extend %picture-background;
+  background-image: url(../img/virgin-america.jpg);
 }
 
 .impress-on-bad-attention-demo {
@@ -148,4 +218,10 @@
 #resources li small {
   display: block;
   line-height: 1;
+}
+
+.impress-on-all {
+  .step {
+    opacity: 1;
+  }
 }
