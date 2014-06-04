@@ -2,7 +2,7 @@
 // Slides
 
 // Show/hide other slides based on which slide is active.
-@each $slide in title, dcmouyard, disabilities, hearing, final {
+@each $slide in title, dcmouyard, disabilities, hearing, design, final {
   .impress-on-#{$slide} .show-on-#{$slide} {
     opacity: 1;
   }
@@ -194,6 +194,10 @@
   background-image: url(../img/codeprep.jpg);
 }
 
+.impress-on-design {
+  @extend %bg-secondary;
+}
+
 .impress-on-flicker {
   @extend %picture-background;
   // http://www.flickr.com/photos/mutantlog/3679652003/
@@ -215,9 +219,8 @@
   background-image: url(../img/stop-sign.jpg);
 }
 
-#resources li small {
-  display: block;
-  line-height: 1;
+.impress-on-thank-you {
+  @extend %bg-secondary;
 }
 
 .impress-on-all {
