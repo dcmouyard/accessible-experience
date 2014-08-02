@@ -13,7 +13,7 @@
 
 %bg-primary {
   background: url(../img/branding/f1-wordmark-white.svg) no-repeat calc(100% - 24px) calc(100% - 18px),
-              $f1-red url(../img/branding/f1-thin-circle-white.svg) no-repeat -1000px 50px;
+              $f1-red url(../img/branding/f1-thin-circle-white.svg) no-repeat -1000px 150px;
   background-size: 144px 16px, 1800px 1800px;
 
   a {
@@ -23,7 +23,7 @@
 
 %bg-secondary {
   background: url(../img/branding/f1-wordmark-white.svg) no-repeat calc(100% - 24px) calc(100% - 18px),
-              $f1-ash url(../img/branding/f1-thin-circle-red.svg) no-repeat -1000px 50px;
+              $f1-ash url(../img/branding/f1-thin-circle-red.svg) no-repeat -1000px 150px;
   background-size: 144px 16px, 1800px 1800px;
 }
 
